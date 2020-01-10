@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "DINPro Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/DINPro-Medium tr.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "DINPro Medium", sans-serif;
+}
+
+#chart {
+  width: 676px;
+  padding: 5em;
+}
+
+#about {
+  width: 676px;
+  padding: 0em 0em 0em 4em;
+}
+
+#pab {
+  width: 676px;
+  padding: 0em 0em 0em 4em;
+}
