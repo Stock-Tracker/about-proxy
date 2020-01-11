@@ -9,7 +9,7 @@ app.use(express.static(__dirname + "/client"));
 
 app.get("/price/:ticker", (req, res) => {
   fetch(
-    `src="http://ec2-34-238-120-158.compute-1.amazonaws.com:4444/price/${req.params.ticker}`
+    `src="http://ec2-54-88-251-88.compute-1.amazonaws.com:4444/price/${req.params.ticker}`
   )
     .then(result => {
       return result.json();
@@ -21,7 +21,7 @@ app.get("/price/:ticker", (req, res) => {
 
 app.get("/about/:ticker", (req, res) => {
   fetch(
-    `http://ec2-52-53-207-250.us-west-1.compute.amazonaws.com:3333/about/${req.params.ticker}`
+    `http://ec2-54-215-175-243.us-west-1.compute.amazonaws.com:3333/about/${req.params.ticker}`
   )
     .then(result => {
       return result.json();
@@ -33,7 +33,7 @@ app.get("/about/:ticker", (req, res) => {
 
 app.get("/people-also-bought/:ticker", (req, res) => {
   fetch(
-    `http://ec2-34-238-120-158.compute-1.amazonaws.com:4550/people-also-bought/${req.params.ticker}`
+    `http://ec2-54-88-251-88.compute-1.amazonaws.com:4550/people-also-bought/${req.params.ticker}`
   )
     .then(result => {
       console.log("result from fetch", result);
